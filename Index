@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UVB-SHADOWLOG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: black;
+      color: #33ff33;
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 40px;
+      line-height: 1.5;
+      overflow: hidden;
+    }
+
+    .glitch {
+      animation: glitch 1.2s infinite;
+    }
+
+    @keyframes glitch {
+      0% {
+        text-shadow: 2px 0 red;
+      }
+      20% {
+        text-shadow: -2px 0 blue;
+      }
+      40% {
+        text-shadow: 2px 2px lime;
+      }
+      60% {
+        text-shadow: -1px -1px cyan;
+      }
+      80% {
+        text-shadow: 1px 1px magenta;
+      }
+      100% {
+        text-shadow: none;
+      }
+    }
+
+    .cursor {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    a.secret {
+      color: #33ff33;
+      text-decoration: none;
+    }
+
+    a.secret:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <p class="
